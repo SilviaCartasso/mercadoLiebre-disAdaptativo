@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Variables*/
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    --roboto: 'Roboto', sans-serif;
+    --parrafo: 12px;
+    --titulo: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripcion: 16px;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+li {
+    list-style: none;
+}
+
+body {
+    font-family: var(--roboto);
+    background-color: var(--Gris-claro);
+    
+}
+
+header {
+    background-color: var(--Amarillo);
+    font-size: 12px;
+    padding: 25px 0;
+}
+
+header div.logo {
+    width: 40%;
+    display: block;
+    margin-left: 25px;
+    margin-bottom: 10px;
+   
+}
+
+header div.busqueda {
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
+
+header input {
+    width: 60%;
+}
+#lupa {
+    margin-left: 15px;
+}
+
+header p {
+    font-size: var(--parrafo);
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+
+header nav ul li a {
+    font-size: var(--parrafo);
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    text-decoration: none; 
+    padding:0px;
+}
+
+header .lista-superior {
+    margin-bottom: 15px;
+}
+
+header .lista-inferior {
+    margin-bottom: 15px;
+}
+
+header div.burger-menu {
+    background-color: var(--Celeste);
+    border-radius: 6px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/*main*/
+
+
+
+main {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+}
+main h4 {
+    font-size: var(--titulo);
+    color: var(--Gris-oscuro);
+}
+
+main section article {
+    margin-bottom: 10px;
+}
+
+main section article .article-description {
+    border-top: 1px solid var(--Gris-claro);
+    padding: 15px;
+    background-color: white;
+}
+
+main section article .article-description p {
+    font-size: var(--precio);
+}
+main section article .article-description  .descuento {
+    color: var(--Verde);
+    font-size: var(--descuento);
+}
+
+main section article .article-description h5 {
+    font-size: var(--descripcion);
+    padding-top: 10px;
+}
+main .truck-icon {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--Verde);
+    color: var(--Verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    
+}
+
+
+/*footer*/
+
+footer {
+    padding: 50px 10px 10px;
+    background-color: white;
+}
+
+footer article {
+    text-align: center;
+    margin: 0px 25px 50px;
+}
+
+footer article h4 {
+    font-size: var(--descripcion);
+}
+
+footer article p {
+    font-size: var(--parrafo);
+}
+
+footer article i {
+    color: var(--Celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#copyright {
+    font-size: var(--parrafo);
+    text-align: left;
+}
+
+@media(max-width:360px) {
+    main section .article-description h5 {
+        display: none;
+    }
+    header .lista-inferior, .lista-superior {
+        display: none;
+    }
+}
+
+@media (min-width:361px) {
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header div.burger-menu {
+        display: none;
+    }
+}
+/*
+@media (min-width: 769px) {
+    }*/
