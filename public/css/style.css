@@ -110,9 +110,16 @@ main {
     margin: auto;
 
 }
+
+.banner {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
 main h4 {
     font-size: var(--titulo);
     color: var(--Gris-oscuro);
+    margin-bottom: 10px;
 }
 
 main section article {
